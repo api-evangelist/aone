@@ -1,7 +1,15 @@
 aid: aone
 name: AOne
-description: AOne is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  AOne is a Malaysia-based learning-centre management software company (operating
+  publicly as AOneSchools) whose all-in-one platform is used by 4,000+ tuition
+  centres, preschools, enrichment centres, sports academies, and language centres
+  to automate billing, LHDN e-invoicing, attendance tracking, student and class
+  management, and parent communication across connected web and mobile apps. It
+  was added to the API Evangelist network as a 500 Global portfolio company. The
+  company's public surface today is a marketing website (aone.com.my) and a
+  customer login/app at app.aoneschools.com; no public developer API, OpenAPI
+  specification, or /.well-known discovery surface is currently published.
 url: https://raw.githubusercontent.com/api-evangelist/aone/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +17,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://aone.com.my/wp-content/uploads/2025/12/Aone_WEB_LOGO31.png
 tags:
 - Company
+- Education
+- EdTech
+- Learning Management
+- School Management
+- Tuition Centre
+- SaaS
+- Malaysia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,24 @@ maintainers:
 common:
 - type: Website
   url: https://aoneschools.com
+- type: Blog
+  url: https://aone.com.my/blog/
+- type: Support
+  url: https://aone.com.my/contact/
+- type: Login
+  url: https://app.aoneschools.com/login
+- type: TermsOfService
+  url: https://aone.com.my/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://aone.com.my/privacy_policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/my-aone-learning
+- type: LLMsTxt
+  url: llms/aone-llms.txt
+- type: DomainSecurity
+  url: security/aone-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

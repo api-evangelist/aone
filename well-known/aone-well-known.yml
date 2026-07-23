@@ -1,0 +1,20 @@
+generated: '2026-07-17'
+method: searched
+source: live probes of /.well-known/* on the AOne production host
+host: https://aone.com.my
+notes: >-
+  aoneschools.com (the apis.yml Website) 301-redirects to aone.com.my, a WordPress
+  marketing site for AOne learning-centre management software. No /.well-known/
+  discovery documents are published; all probes returned 404. Absence recorded as
+  expected data (no OAuth/OIDC authorization server, no api-catalog, no ai-plugin).
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
